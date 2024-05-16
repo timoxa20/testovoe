@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "swiper": "^11.1.3"
+  },
+  "name": "artem",
+  "version": "1.0.0",
+  "description": "descr",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "artem",
+  "license": "ISC"
+}

@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img class="header__logo-img" src="./assets/logo.svg" alt="logo">
+            </div>
+            <nav class="header__menu">
+                <ul class="header__menu-inner">
+                    <li class="header__menu_link">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="header__menu_link">
+                        <a href="#">Дома</a>
+                    </li>
+                    <li class="header__menu_link">
+                        <a href="#">Бани</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__burger">
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+                <div class="header__burger-line"></div>
+            </div>
+            <div class="header__address">
+                <div class="header__inner-address">
+                    <div class="header__address-city">Санкт-Петербург:</div>
+                    <a href="tel:8 (812) 603-72-22" class="header__address-phone">8 (812) 603-72-22</a>
+                </div>
+                <div class="header__inner-address">
+                    <div class="header__address-city">Москва:</div>
+                    <a href="tel:8 (499) 380-77-33" class="header__address-phone">8 (499) 380-77-33</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__info">
+            <h1 class="header__text-title">
+                «ПЕСТОВСКИЙ ЛЕСОКОМБИНАТ»
+            </h1>
+            <p class="header__text-subtext">
+                Cтань частью нашей команды!
+            </p>
+            <button class="header__button">
+                ОТПРАВИТЬ АНКЕТУ
+            </button>
+        </div>
+    </div>
+</header>
+<section class="about">
+    <div class="container">
+        <h3 class="about__title">О компании</h3>
+        <div class="about__inner">
+            <div class="about__box">
+                <div class="about__box-number">2</div>
+                <div class="about__box-text">Города присутствия: <br> Санкт-Петербург и Москва</div>
+            </div>
+            <div class="about__box">
+                <div class="about__box-number">>30</div>
+                <div class="about__box-text">Лет среди лидеров рынка</div>
+            </div>
+            <div class="about__box">
+                <div class="about__box-number">100</div>
+                <div class="about__box-text">Домов и бань сдаём ежегодно</div>
+            </div>
+        </div>
+
+        <div class="about__division">
+            <h3 class="about__title about__title-title">ВЫБЕРИТЕ ПОДРАЗДЕЛЕНИЕ:</h3>
+            <div class="about__division-tab">
+                <button id="item-1" class="about__tab-navigate active-tabs" onclick="openTab('item-content-1')">
+                    СТРОЙТЕЛЬНЫЙ ОТДЕЛ
+                </button>
+                <button id="item-2" class="about__tab-navigate" onclick="openTab('item-content-2')">ОФИС</button>
+                <button id="item-3" class="about__tab-navigate" onclick="openTab('item-content-3')">ФИНАНСОВЫЙ ОТДЕЛ
+                </button>
+                <button id="item-4" class="about__tab-navigate" onclick="openTab('item-content-4')">ОТДЕЛ ПРОДАЖ
+                </button>
+                <br>
+                <button id="item-5" class="about__tab-navigate mt" onclick="openTab('item-content-5')">ВНЕШТАТНЫЙ
+                    СОТРУДНИК
+                </button>
+            </div>
+            <div class="about__division-box ">
+                <div id="item-content-1" class="about__division-content active-content">
+                    <div class="list">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="list listTwo">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listThree">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listFor">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="item-content-2" class="about__division-content">
+                    <div class="list">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="list listTwo">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listThree">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Инженер</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listFor">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="item-content-3" class="about__division-content">
+                    <div class="list">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="list listTwo">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Сварищик</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listThree">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listFor">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Сантехник</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="item-content-4" class="about__division-content">
+                    <div class="list">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="list listTwo">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listThree">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Слесарь</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listFor">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="item-content-5" class="about__division-content">
+                    <div class="list">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="list listTwo">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Электрик</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listThree">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list listFor">
+                        <div class="about__division-post">
+                            <div class="about__division-post__info">
+                                <div class="about__division-post__info-post">
+                                    <img src="./assets/vacancy.svg" alt="user"
+                                         class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person">Прораб</div>
+                                </div>
+                                <div class="about__division-post__info-post price">
+                                    <img src="./assets/price.png" alt="" class="about__division-post__info-post__img">
+                                    <div class="about__division-post__info-post__person price-work">от 00 000 руб</div>
+                                </div>
+                            </div>
+                            <div class="about__division-post__plus">
+                                <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                            </div>
+                        </div>
+                        <div class="list__hidden hidden">
+                            <div class="list__hidden-title">Задачи:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Наши ожидания:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                                <li class="list__hidden-info">Описание</li>
+                            </ul>
+                            <div class="list__hidden-title">Мы предлагаем:</div>
+                            <ul class="list__hidden-list">
+                                <li class="list__hidden-info">график 5/2 с гибким началом рабочего дня</li>
+                                <li class="list__hidden-info">оформление по ТК РФ с первого рабочего дня, полностью
+                                    белую заработную плату;
+                                </li>
+                                <li class="list__hidden-info">ежеквартальную премию по итогам работы;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="header__button about__button">
+                ОТКЛИКНУТЬСЯ НА ВАКАНСИЮ
+            </button>
+        </div>
+    </div>
+</section>
+<section class="advantages">
+    <div class="container">
+        <h3 class="about__title advantages__title">ПРЕЙМУЩЕСТВА КОМПАНИЙ</h3>
+        <div class="advantages__box">
+            <div class="advantages__box-list">
+                <div class="advantages__box-img">
+                    <img class="advantages__img" src="./assets/icon5.svg" alt="plus">
+                </div>
+                <div class="advantages__box-text">
+                    <div class="advantages__box-text__title">
+                        Качество продукта
+                    </div>
+                    <div class="advantages__box-text__subtitle">
+                        Мы гордимся результатами своей работы! Мы убеждены, что именно качество — это самое главное,
+                        это то, что даёт Нам уверенность в завтрашнем дне.
+                    </div>
+                </div>
+                <div class="about__division-post__plus mobile__plus">
+                    <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                </div>
+            </div>
+            <div class="advantages__box-list">
+                <div class="advantages__box-img">
+                    <img class="advantages__img" src="./assets/icon.svg" alt="plus">
+                </div>
+                <div class="advantages__box-text">
+                    <div class="advantages__box-text__title">
+                        Популярность бренда в сети
+                    </div>
+                    <div class="advantages__box-text__subtitle">
+                        Мы занимаем высокие позиции в поисковой выдаче и имеем многочисленные отзывы, привлекающие новых
+                        заказчиков независимо от времени года.
+                    </div>
+                </div>
+                <div class="about__division-post__plus mobile__plus">
+                    <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                </div>
+            </div>
+            <div class="advantages__box-list advantages__box-list__three">
+                <div class="advantages__box-img">
+                    <img class="advantages__img" src="./assets/icon2.svg" alt="plus">
+                </div>
+                <div class="advantages__box-text">
+                    <div class="advantages__box-text__title">
+                        Передовое рабочее место
+                    </div>
+                    <div class="advantages__box-text__subtitle">
+                        Комфортный офис в центре г. Санкт-Петербург, оборудованный передовыми технологиями. Твой рабочий
+                        компьютер может быть даже в твоём смартфоне!
+                    </div>
+                </div>
+                <div class="about__division-post__plus mobile__plus">
+                    <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                </div>
+            </div>
+            <div class="advantages__box-list">
+                <div class="advantages__box-img">
+                    <img class="advantages__img" src="./assets/icon3.svg" alt="plus">
+                </div>
+                <div class="advantages__box-text">
+                    <div class="advantages__box-text__title">
+                        Свои автоматизированные системы обучения
+                    </div>
+                    <div class="advantages__box-text__subtitle">
+                        Создали и постоянно улучшаем собственные автоматизированные системы обучения специалистов
+                        и повышения их квалификации внутри компании.
+                    </div>
+                </div>
+                <div class="about__division-post__plus mobile__plus">
+                    <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                </div>
+            </div>
+            <div class="advantages__box-list advantages__box-list__five">
+                <div class="advantages__box-img">
+                    <img class="advantages__img" src="./assets/icon4.svg" alt="plus">
+                </div>
+                <div class="advantages__box-text">
+                    <div class="advantages__box-text__title">
+                        Сотрудничество с ведущими Компаниями рынка
+                    </div>
+                    <div class="advantages__box-text__subtitle">
+                        Сотрудничаем с ведущими Компаниями рынка строительных материалов: «Grand Line», «Петрович»,
+                        «Окна Петербурга», «КраскиДоски», «Technonicol» и другими.
+                    </div>
+                </div>
+                <div class="about__division-post__plus mobile__plus">
+                    <img class="about__division-post__img" src="./assets/Group.svg" alt="plus">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project">
+    <div class="container">
+        <h3 class="about__title project__title">ПРОЕКТЫ КОМПАНИИ</h3>
+        <div class="about__division-tab">
+            <button id="about__bani-tab" class="project__tab-navigate active-project">
+                БАНИ
+            </button>
+            <button id="about__doma-tab" class="project__tab-navigate project__tab-navigate__home">
+                ДОМА
+            </button>
+        </div>
+
+        <div class="carousel" id="bani-carousel">
+            <div class="arrow__left">
+                <img src="./assets/arrow-left.svg" alt="prev" class="arrow__click__left">
+            </div>
+            <div class="carousel__wrapper">
+                <div class="slide">
+                    <img src="./assets/IMG.jpg" alt="slide">
+                </div>
+                <div class="slide">
+                    <img src="./assets/gor.jpg" alt="slide">
+                </div>
+                <div class="slide">
+                    <img src="./assets/gora.jpg" alt="slide">
+                </div>
+                <div class="slide">
+                    <img src="./assets/IMG.jpg" alt="slide">
+                </div>
+                <div class="slide">
+                    <img src="./assets/gor.jpg" alt="slide">
+                </div>
+                <div class="arrow__right">
+                    <img src="./assets/arrow-right.svg" alt="next" class="arrow__click__right">
+                </div>
+            </div>
+        </div>
+        <div class="carousel" id="doma-carousel">
+            <div class="carousel__wrapper">-->
+                <div class="arrow__left">
+                    <img src="./assets/arrow-left.svg" alt="prev" class="arrow__click__left">
+                </div>
+                <div class="slide active-slide">
+                    <img src="./assets/IMG.jpg" alt="slide">
+                </div>
+                <div class="slide">
+                    <img src="./assets/gor.jpg" alt="slide">
+                </div>
+                <div class="slide">
+                    <img src="./assets/gora.jpg" alt="slide">
+                </div>
+                <div class="slide">
+                    <img src="./assets/IMG.jpg" alt="slide">
+                </div>
+                <div class="slide">
+                    <img src="./assets/gor.jpg" alt="slide">
+                </div>
+                <div class="arrow__right">
+                    <img src="./assets/arrow-right.svg" alt="next" class="arrow__click__right">
+                </div>
+            </div>
+
+        </div>
+        <div class="dots">
+            <div class="dots__tabs active__dot"></div>
+            <div class="dots__tabs"></div>
+            <div class="dots__tabs"></div>
+            <div class="dots__tabs"></div>
+            <div class="dots__tabs"></div>
+        </div>
+    </div>
+</section>
+<section class="career__growth">
+    <div class="container">
+        <h3 class="about__title career__title">карьерный рост</h3>
+
+        <div class="career__growth-box">
+            <div class="career__growth-info">
+                <img src="./assets/transporter1.svg" alt="transporter" class="career__growth-img">
+                <div class="career__growth-text">
+                    Наша Компания является ярким примером, где достойные люди смело и заслуженно поднимаются
+                    по карьерной
+                    лестнице.
+                </div>
+            </div>
+            <div class="career__growth-info">
+                <img src="./assets/transporter2.svg" alt="transporter" class="career__growth-img">
+                <div class="career__growth-text">
+                    Мы ценим стремление к развитию и предоставляем все необходимые для этого условия.
+                </div>
+            </div>
+        </div>
+        <div class="slider__human ">
+            <div class="slider__inner active-human">
+                <div class="slider__human-info">
+                    <div class="slider__human-info__username">Олег Воробьёв</div>
+                    <div class="slider__human-info__post">Прораб</div>
+                    <ul class="slider__human-info__list">
+                        <li class="slider__human-info-desr">В Компании с 2018 года. Начал с позиции плотника
+                            в строительной
+                            бригаде.
+                        </li>
+                        <li class="slider__human-info-desr">В течение года работы Олег стал бригадиром и был приглашён
+                            в офис
+                            Компании на должность штатного Производителя строительных работ.
+                        </li>
+                        <li class="slider__human-info-desr">На данный момент в Его подчинении находятся 9 строительных
+                            бригад.
+                            Олег вносит весомый вклад в итоговый результат Компании, а это реализация 100 объектов
+                            в год!
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider__human-img">
+                    <img src="./assets/image.png" alt="human" class="slider__human-images">
+                </div>
+            </div>
+            <div class="slider__inner">
+                <div class="slider__human-info">
+                    <div class="slider__human-info__username">Олег Воробьёв</div>
+                    <div class="slider__human-info__post">Прораб</div>
+                    <ul class="slider__human-info__list">
+                        <li class="slider__human-info-desr">В Компании с 2018 года. Начал с позиции плотника
+                            в строительной
+                            бригаде.
+                        </li>
+                        <li class="slider__human-info-desr">В течение года работы Олег стал бригадиром и был приглашён
+                            в офис
+                            Компании на должность штатного Производителя строительных работ.
+                        </li>
+                        <li class="slider__human-info-desr">На данный момент в Его подчинении находятся 9 строительных
+                            бригад.
+                            Олег вносит весомый вклад в итоговый результат Компании, а это реализация 100 объектов
+                            в год!
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider__human-img">
+                    <img src="./assets/Danil.png" alt="human" class="slider__human-images">
+                </div>
+            </div>
+            <div class="slider__inner">
+                <div class="slider__human-info">
+                    <div class="slider__human-info__username">Олег Воробьёв</div>
+                    <div class="slider__human-info__post">Прораб</div>
+                    <ul class="slider__human-info__list">
+                        <li class="slider__human-info-desr">В Компании с 2018 года. Начал с позиции плотника
+                            в строительной
+                            бригаде.
+                        </li>
+                        <li class="slider__human-info-desr">В течение года работы Олег стал бригадиром и был приглашён
+                            в офис
+                            Компании на должность штатного Производителя строительных работ.
+                        </li>
+                        <li class="slider__human-info-desr">На данный момент в Его подчинении находятся 9 строительных
+                            бригад.
+                            Олег вносит весомый вклад в итоговый результат Компании, а это реализация 100 объектов
+                            в год!
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider__human-img">
+                    <img src="./assets/Mary.png" alt="human" class="slider__human-images">
+                </div>
+            </div>
+            <div class="slider__inner">
+                <div class="slider__human-info">
+                    <div class="slider__human-info__username">Олег Воробьёв</div>
+                    <div class="slider__human-info__post">Прораб</div>
+                    <ul class="slider__human-info__list">
+                        <li class="slider__human-info-desr">В Компании с 2018 года. Начал с позиции плотника
+                            в строительной
+                            бригаде.
+                        </li>
+                        <li class="slider__human-info-desr">В течение года работы Олег стал бригадиром и был приглашён
+                            в офис
+                            Компании на должность штатного Производителя строительных работ.
+                        </li>
+                        <li class="slider__human-info-desr">На данный момент в Его подчинении находятся 9 строительных
+                            бригад.
+                            Олег вносит весомый вклад в итоговый результат Компании, а это реализация 100 объектов
+                            в год!
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider__human-img">
+                    <img src="./assets/Danil.png" alt="human" class="slider__human-images">
+                </div>
+            </div>
+            <div class="slider__inner">
+                <div class="slider__human-info">
+                    <div class="slider__human-info__username">Олег Воробьёв</div>
+                    <div class="slider__human-info__post">Прораб</div>
+                    <ul class="slider__human-info__list">
+                        <li class="slider__human-info-desr">В Компании с 2018 года. Начал с позиции плотника
+                            в строительной
+                            бригаде.
+                        </li>
+                        <li class="slider__human-info-desr">В течение года работы Олег стал бригадиром и был приглашён
+                            в офис
+                            Компании на должность штатного Производителя строительных работ.
+                        </li>
+                        <li class="slider__human-info-desr">На данный момент в Его подчинении находятся 9 строительных
+                            бригад.
+                            Олег вносит весомый вклад в итоговый результат Компании, а это реализация 100 объектов
+                            в год!
+                        </li>
+                    </ul>
+                </div>
+                <div class="slider__human-img">
+                    <img src="./assets/image.png" alt="human" class="slider__human-images">
+                </div>
+            </div>
+
+            <div class="slider__controll">
+                <div class="arrow__left human__arrow-left">
+                    <img src="./assets/arrow-left.svg" alt="prev" class="arrow__click__left">
+                </div>
+                <div class="arrow__right human__arrow-right">
+                    <img src="./assets/arrow-right.svg" alt="next" class="arrow__click__right">
+                </div>
+            </div>
+
+            <div class="slider__human-rectangle">
+                <img src="./assets/Rectangle%20155.png" alt="human" class="slider__human-images">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="successes">
+    <div class="container">
+        <h3 class="about__title successes__title">НАШИ УСПЕХИ — ЭТО ЗАСЛУГА ЗАМЕЧАТЕЛЬНЫХ ЛЮДЕЙ, РАБОТАЮЩИХ В НАШЕЙ
+            КОМАНДЕ.
+            <br><br>У НАС ВСЕГДА ЕСТЬ ВАКАНСИЙ ДЛЯ СИЛЬНЫХ КАНДИДАТОВ</h3>
+        <div class="successes__image">
+            <img src="./assets/blic.png" alt="blic" class="successes__image-family">
+        </div>
+        <div class="successes__work">
+            <div class="successes__work-title">ЕСЛИ ЧУВСТВУЕШЬ В СЕБЕ ПОТЕНЦИАЛ И ЗДОРОВЫЕ АМБИЦИЙ — ЖДЁМ РЯДОМ
+                С НАМИ!
+            </div>
+            <button class="header__button">
+                Присоединиться к команде
+            </button>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__top-info">
+                <h3 class="about__title footer__title">КОНТАКТЫ</h3>
+                <div class="about__division-tab">
+                    <button id="footerOnly" class="footer__tab-navigate active-tabs__footer"
+                            onclick="showContent('footerContentOne', 'footerOnly')">
+                        САНКТ-ПЕТЕРБУРГ
+                    </button>
+                    <button id="footerTwo" class="footer__tab-navigate"
+                            onclick="showContent('footerContentTwo', 'footerTwo')">
+                        МОСКВА
+                    </button>
+                </div>
+                <div class="footer__inner">
+                    <div class="about__division-box ">
+                        <div id="footerContentOne" class="footer-content active-content-footer">
+                            <div class="footer-post">
+                                <img class="footer-post__img" src="./assets/phone.svg" alt="plus">
+                                <a href="tel:88126027760" class="footer-post__info">
+                                    8 (812) 602-77-60
+                                </a>
+                            </div>
+                            <div class="footer-post">
+                                <img class="footer-post__img" src="./assets/email.svg" alt="plus">
+                                <a href="#" class="footer-post__info">
+                                    info@pplk.ru
+                                </a>
+                            </div>
+                            <div class="footer-post">
+                                <img class="footer-post__img" src="./assets/maps.svg" alt="plus">
+                                <a href="tel:88126027760" class="footer-post__info">
+                                    ул. Заозёрная, д. 8 к. 2, офис 202
+                                    <br>(7 мин. пешком от метро Фрунзенская)
+                                </a>
+                            </div>
+                        </div>
+                        <div id="footerContentTwo" class="about__division-content">
+                            <div class="footer-post">
+                                <img class="footer-post__img" src="./assets/phone.svg" alt="plus">
+                                <a href="tel:88126027760" class="footer-post__info">
+                                    8 (812) 602-77-60
+                                </a>
+                            </div>
+                            <div class="footer-post">
+                                <img class="footer-post__img" src="./assets/email.svg" alt="plus">
+                                <a href="#" class="footer-post__info">
+                                    info@pplk.ru
+                                </a>
+                            </div>
+                            <div class="footer-post">
+                                <img class="footer-post__img" src="./assets/maps.svg" alt="plus">
+                                <a href="tel:88126027760" class="footer-post__info">
+                                    ул. Заозёрная, д. 8 к. 2, офис 202
+                                    <br>(7 мин. пешком от метро Фрунзенская)
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social__link">
+                            <img src="./assets/youtube.svg" alt="youtube" class="social__link-youtube">
+                            <img src="./assets/vk.svg" alt="vk" class="social__link-vk">
+                            <img src="./assets/telegram.svg" alt="telegram" class="social__link-telegram">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="footer__top-maps">
+                    <img src="./assets/map.png" alt="map" class="footer__top-maps__img">
+                </a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__info">
+                © 2023 Пестовский Лесокомбинат. Все права защищены.
+            </div>
+            <a href="#" class="footer__link">Оформить заявку на кредит</a>
+            <a href="#" class="footer__link"> Реквизиты</a>
+            <a href="#" class="footer__link"> Политика конфиденциальности</a>
+            <a href="#" class="footer__logo">
+                <img alt="logo" src="./assets/Alpha-logo.svg">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close"><img src="./assets/close.svg" alt="close"></span>
+        <form class="modal-content__inner">
+            <p class="modal__cv">Заполните анкету</p>
+            <label class="modal__userName">
+                <input class="modal__userName-text" type="text" placeholder="Ф.И.О.">
+            </label>
+            <label class="modal__phone">
+                <input class="modal__phone-text" type="text" placeholder="Телефон">
+            </label>
+            <label class="modal__select">
+                <p class="modal__work">Отклик на вакансию</p>
+                <select class="modal__select-name" name="select">
+                    <option value="value1" selected disabled>Выберете вакансию</option>
+                    <option value="value1">Значение 1</option>
+                    <option value="value2">Значение 2</option>
+                    <option value="value3">Значение 3</option>
+                </select>
+            </label>
+            <label class="modal__file">
+                <p class="modal__work">Ваше резюме</p>
+                <p class="modal__loader">Есть резюме в формате .pdf или .doc? Приложите и отправьте его нам.</p>
+                <input type="file">
+                <span class="input-file-btn">Загрузить файл</span>
+            </label>
+            <label class="modal__checkbox">
+                <input class="modal__checkbox-type" type="checkbox">
+                <p>Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой конфиденциальности, Согласием
+                    на обработку персональных данных физическим лицом. Я осознаю, что даю Согласие на обработку
+                    персональных данных для использования предоставляемых возможностей Веб-сервиса.
+                    <br><br>Я достиг(ла) 18-летнего возраста</p>
+            </label>
+            <button type="submit" class="modal__button">
+                Отправить анкету
+            </button>
+        </form>
+
+    </div>
+</div>
+
+<div id="myModalSuccess" class="modal__success">
+    <div class="modal-content modal-content-success">
+        <p class="modal__cv">Анкета отправлена</p>
+        <img src="./assets/success.png" alt="done" class="modal__img-success">
+        <p class="modal__cv-success">Благодарим за ваш отклик и интерес.</p>
+        <p class="modal__cv-success">Мы изучим вашу анкету и свяжемся с вами в течении 2х дней.</p>
+        <button class="modal__button modal__button-success">
+            На главную
+        </button>
+    </div>
+</div>
+</body>
+<script src="./scripts/script.js"></script>
+</html>
